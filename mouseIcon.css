@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.starIcon{
+    background-image: url(2792946_star_xmas_icon.png);
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 7s ;
+}
+
+#myP{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    pointer-events: none;
+    font-size: 50px;
+    margin: 100px;
+}
+
+.myP1{
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    pointer-events: none;
+    font-size: 50px;
+    margin: 100px;
+    overflow: inherit;
+    
+}
+
+@keyframes animate2{
+    to{transform: rotateX(720deg);
+        opacity: 0;
+        filter: hue-rotate(1000deg);}
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+       
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0; 
+        filter: hue-rotate(820deg);
+       
+    }
+}
